@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SpinnerListActivity">
+
+    <Spinner
+        android:background="@color/purple_500"
+        android:layout_margin="10dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <AutoCompleteTextView
+        android:id="@+id/spinner_autocompletetext"
+        android:hint="Search City"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </AutoCompleteTextView>
+    <MultiAutoCompleteTextView
+        android:id="@+id/spinner_multiautocompletetext"
+        android:hint="Search Multiple City"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </MultiAutoCompleteTextView>
+    <GridView
+        android:numColumns="auto_fit"
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </AutoCompleteTextView>
+</LinearLayout>

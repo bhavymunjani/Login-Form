@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+    <TextView
+        android:padding="5dp"
+        android:layout_weight="2"
+        style="@style/text_morris_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email id"
+        android:background="@color/sky_blue"
+        />
+    <TextView
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:id="@+id/home_email"
+        style="@style/text_morris_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bhavymunjani1418@gmail.com"
+        android:background="@color/purple_500"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:padding="5dp"
+            android:layout_weight="2"
+            style="@style/text_morris_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password :"
+            android:background="@color/sky_blue"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:id="@+id/home_password"
+            style="@style/text_morris_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bhavy@1418"
+            android:background="@color/purple_500"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:fontFamily="@font/morrisromanblack"
+        android:textSize="20dp"
+        android:textColor="@color/white">
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:id="@+id/home_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/home_male"
+            android:text="male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/home_female"
+            android:text="female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/home_transgender"
+            android:text="transgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language;"
+        android:fontFamily="@font/morrisromanblack"
+        android:textSize="20dp"
+        android:textColor="@color/white">
+
+    </TextView>
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:id="@+id/home_android"
+        android:text="android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/home_ios"
+        android:text="ios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/home_java"
+        android:text="java"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/home_flutter"
+        android:text="flutter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/home_show"
+        style="@style/button_morris_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Language"
+        >
+
+    </Button>
+
+
+</LinearLayout>

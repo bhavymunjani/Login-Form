@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SqliteCustomListActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/Linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="200dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/text_morris_20"
+                android:background="@color/sky_blue"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Name"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_marginHorizontal="2dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/text_morris_20"
+                android:background="@color/sky_blue"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Email"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/text_morris_20"
+                android:background="@color/sky_blue"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Contact"
+                >
+            </TextView>
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/text_morris_20"
+                android:background="@color/sky_blue"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Action"
+                >
+            </TextView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@+id/Linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/custom_list_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/add"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</FrameLayout>

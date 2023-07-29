@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Date_TimeActivity"
+    android:background="@color/sky_blue">
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/date_select"
+        android:drawableRight="@drawable/calender1"
+        style="@style/edit_morris_18"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date">
+
+    </EditText>
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/time_select"
+        android:drawableRight="@drawable/clock"
+        style="@style/edit_morris_18"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select time">
+
+    </EditText>
+
+</LinearLayout>

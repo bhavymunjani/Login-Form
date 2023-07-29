@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:textColor="@color/white"
+        style="@style/text_morris_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <TextView
+        android:id="@+id/detail_price"
+        android:textColor="@color/white"
+        style="@style/text_morris_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        android:id="@+id/detail_discription"
+        style="@style/text_morris_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+</LinearLayout>
